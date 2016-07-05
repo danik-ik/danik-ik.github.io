@@ -5,3 +5,25 @@
 - цвет фона и цвет бордюра должны меняться через css, желательно -- несложными правилами, очень желательно -- по одному правилу на цвет
 - Картинка вставяется через html или css
 - Номер вставляется в html
+
+Реализация:
+	<div class="achievement achievement-no-number">
+		<img src="owl.png">
+	</div>
+
+	<div class="achievement">
+		<img src="owl.png">
+		<span>2</span>
+	</div>
+
+	<div class="achievement achievement-gold">
+		<img src="ddd.png">
+		<span>99</span>
+	</div>
+
+css:
+.achievement-gold {
+	background-color: #ffff79;
+	color: #fff016;
+	/*Границу буду рисовать тенями. Тени по умолчанию наследуют цвет шрифта.*/
+}
