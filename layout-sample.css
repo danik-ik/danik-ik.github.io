@@ -1,0 +1,15 @@
+.sample {
+	position: absolute;
+	left:0;
+	top:0;
+}
+.sample img {
+	opacity: 0.75;
+	/*filter:alpha(opacity=75);*/
+}
+.switch {
+	position: absolute;
+	left:10px;
+	top:10px;
+	z-index: 10;
+}
