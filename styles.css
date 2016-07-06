@@ -1,3 +1,86 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+}
+.achievement-wrapper {
+	padding-left: 15px;
+}
+
+.achievement {
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	margin: 18px 26px 0 25px;
+
+	background-color: #dddddd;
+	color:	red;
+
+	background-position: 50% 50%;
+	background-size: auto;
+	background-repeat: no-repeat;
+
+	box-shadow: 0 0 0 5px,
+	30px 30px 0 -23px;
+}
+
+.achievement-no-number {
+	box-shadow: 0 0 0 5px;
+}
+
+.achievement > span,
+.achievement::before {
+	display: block;
+	position: absolute;
+	background-color: inherit;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.achievement::before {
+	content: '';
+	border-radius: 50%;
+	width: 36px;
+	height: 36px;
+	top: 57px;
+	left: 57px;
+	line-height: 36px;
+}
+.achievement.achievement-no-number::before {
+	visibility: hidden;
+}
+
+.achievement > span {
+	border-radius: 5px;
+	width: 28px;
+	height: 20px;
+	line-height: 20px;
+	top: 67px;
+	left: 63px;
+
+	font-size: 18px;
+	font-family: "Arial", sans-serif;
+	font-weight: bold;
+	background-color: transparent;
+}
+
+.achievement > img,
+.achievement > svg {
+	display: block;
+	position: absolute;
+	max-width: 100%;
+	max-height: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
 .achievement-gold {
 	background-color: #ffff79;
 	color: #fff016;
