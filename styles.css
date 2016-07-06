@@ -90,3 +90,33 @@ body {
 		Границу буду рисовать тенями. Тени по умолчанию наследуют цвет шрифта.
 	*/
 }
+
+.achievement-blue {
+	background-color: #F3F8FA;
+	color: #89B8CF;
+	fill: #89B8CF;
+}
+
+.achievement-violent {
+	background-color: #DEDCDF;
+	color: #A08DA3;
+	fill: #A08DA3;
+}
+
+.achievement-green {
+	background-color: #a7c5ac;
+	color: #57a14d;
+	fill: #57a14d;
+}
+
+.achievement-red {
+	background-color: #ddb1b4;
+	color: #d70000;
+	fill: #d70000;
+}
+
+.achievement-size-75 > img,
+.achievement-size-75 > svg{
+	max-height: 75%;
+	max-width: 75%;
+}
