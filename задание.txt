@@ -25,5 +25,6 @@ css:
 .achievement-gold {
 	background-color: #ffff79;
 	color: #fff016;
+	fill: #fff016;
 	/*Границу буду рисовать тенями. Тени по умолчанию наследуют цвет шрифта.*/
 }
