@@ -5,7 +5,8 @@
 }
 .sample img {
 	opacity: 0.75;
-	/*filter:alpha(opacity=75);*/
+	filter:alpha(opacity=75);
+	visibility: hidden;
 }
 .switch {
 	position: absolute;

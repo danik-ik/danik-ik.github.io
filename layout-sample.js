@@ -1,5 +1,5 @@
 var USE_HTML_FILE = false; // В этом режиме пытаемся загрузить файл layout-sample.htm
-var theSample = '<div class="sample">\n  <div>\n    <div class="switch">\n      <input type="checkbox" checked id="visibilitySwitch" onclick="sampleSwitch()">\n    </div>\n  </div>\n  <img src="layout-sample.png" id="sampleImage">\n</div>\n';
+var theSample = '<div class="sample">\n  <div>\n    <div class="switch">\n      <input type="checkbox" id="visibilitySwitch" onclick="sampleSwitch()">\n    </div>\n  </div>\n  <img src="layout-sample.png" id="sampleImage">\n</div>\n';
 if (USE_HTML_FILE) 
 	theSample = '<h2>can\'t load layout-sample.htm, const used</h2>' + theSample;
 
@@ -46,5 +46,5 @@ function useTheSample(sample) {
 }
 function sampleSwitch() {
 	sampleImage = document.getElementById('sampleImage');
-	sampleImage.style.display = document.getElementById('visibilitySwitch').checked ? '' : 'none';
+	sampleImage.style.visibility = document.getElementById('visibilitySwitch').checked ? 'visible' : 'hidden';
 }
