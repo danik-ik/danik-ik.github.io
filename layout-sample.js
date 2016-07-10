@@ -46,5 +46,5 @@ function useTheSample(sample) {
 }
 function sampleSwitch() {
 	sampleImage = document.getElementById('sampleImage');
-	sampleImage.hidden = !document.getElementById('visibilitySwitch').checked;
+	sampleImage.style.display = document.getElementById('visibilitySwitch').checked ? '' : 'none';
 }
